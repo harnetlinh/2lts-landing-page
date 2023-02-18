@@ -10,7 +10,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "predeploy": "yarn build",
+    "predeploy": "yarn generate",
     "deploy": "gh-pages -d .nuxt"
   },
   "dependencies": {
