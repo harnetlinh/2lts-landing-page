@@ -5,16 +5,16 @@
           <div class="main-menu-wrap">
               <div class="container">
                   <div class="row align-items-center">
-                      <div class="col-xl-3 col-lg-3 col-md-4 col-6">
+                      <div class="col-xl-2 col-lg-2 col-md-3 col-4">
                           <!-- Logo -->
                           <div class="logo">
                               <nuxt-link to="/">
-                                  <img src="/assets/img/logo.png" alt="jironis" width="15%">
+                                  <img src="/assets/img/logo.png" alt="jironis" width="30%">
                               </nuxt-link>
                           </div>
                           <!-- End of Logo -->
                       </div>
-                      <div class="col-xl-6 col-lg-6 col-md-4 col-6 menu-button">
+                      <div class="col-xl-7 col-lg-7 col-md-7 col-7 menu-button">
                           <div class="menu--inner-area clearfix">
                               <div class="menu-wraper">
                                   <nav>
@@ -31,7 +31,7 @@
 
                                               </li>
                                               <li><a href="#features">Chúng tôi</a></li>
-                                              <li><a href="#app">Sản phẩm</a></li>
+                                              <li><a href="#app">Tầm nhìn sứ mệnh</a></li>
                                               <li><a href="#pricing">
                                                 Tra cứu dịch vụ
                                               </a></li>

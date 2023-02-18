@@ -5,7 +5,6 @@
         <div class="col-md-12 col-lg-12 col-xl-12">
             <!-- section title -->
             <div class="text-center">
-                <h2>Về chúng tôi</h2>
                 <div class="w-100">
                   <img width="100%" src="../static/assets/img/2LTS_3.png" alt="">
                 </div>
@@ -25,7 +24,7 @@
                         <div class="single-feature-inner text-center">
                             <img
                               style="object-fit: contain;"
-                              src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOSISuYrVjDtqhZzorbGad07am7nUuUdjWnRfxBexZXlXH7rjj5-TzZgqHovb9n4K4tPUUNTTkrbIJ036-8NfW_S3yP2LA=w1920-h969" 
+                              src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOSISuYrVjDtqhZzorbGad07am7nUuUdjWnRfxBexZXlXH7rjj5-TzZgqHovb9n4K4tPUUNTTkrbIJ036-8NfW_S3yP2LA=w1920-h969"
                               class="svg"
                               alt=""
                             >
@@ -36,7 +35,7 @@
                         <div class="single-feature-inner text-center">
                             <img
                               style="object-fit: contain;"
-                              src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEORFaa-Za2e68WCSJMNdlRulty_4dYZ2wCKN0Ad9Mmtp0ZUqPG0Reqrkxb_sIJGl8KGwsLymV6u-csV7knlLjxFOrexHPQ=w1920-h969" 
+                              src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEORFaa-Za2e68WCSJMNdlRulty_4dYZ2wCKN0Ad9Mmtp0ZUqPG0Reqrkxb_sIJGl8KGwsLymV6u-csV7knlLjxFOrexHPQ=w1920-h969"
                               class="svg"
                               alt=""
                             >
