@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-20 pb-20" id="#service-two">
+  <section class="pt-20 pb-20" id="service-two">
     <div class="container-fluid w-100">
       <div class="row justify-content-center">
         <div class="col-lg-12 col-sm-12 col-xl-12">

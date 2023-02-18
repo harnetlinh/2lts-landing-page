@@ -84,7 +84,7 @@
               :class="`col text-center location-tab ${currentTab == 1 ? 'active show' : ''}`"
             >
               <img v-if="currentTab === 1" src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="" style="width: 24px; height: 24px;">
-              <span>Cầu Giấy</span>
+              <span>Hoàn Kiếm</span>
             </div>
 
             <div
@@ -92,7 +92,7 @@
               :class="`col text-center location-tab ${currentTab == 2 ? 'active show' : ''}`"
             >
               <img v-if="currentTab === 2" src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="" style="width: 24px; height: 24px;">
-              <span>Phố Huế</span>
+              <span>Đống Đa</span>
             </div>
 
             <div
@@ -100,7 +100,7 @@
               :class="`col text-center location-tab ${currentTab == 3 ? 'active show' : ''}`"
             >
               <img v-if="currentTab === 3" src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="" style="width: 24px; height: 24px;">
-              <span>Bắc Từ Liêm</span>
+              <span>Ba Đình</span>
             </div>
 
             <div
@@ -108,7 +108,7 @@
               :class="`col text-center location-tab ${currentTab == 4 ? 'active show' : ''}`"
             >
               <img v-if="currentTab === 4" src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="" style="width: 24px; height: 24px;">
-              <span>Nam Từ Liêm</span>
+              <span>Hai Bà Trưng</span>
             </div>
 
             <div
@@ -122,19 +122,21 @@
 
           <div v-if="isShowStatistic" class="row mt-3">
             <div class="col-md-6 col-lg-6 text-center">
-              <span>Hôm nay, {{ currentDate }}</span>
+              <span>Hôm nay, 20/02/2023</span>
 
               <div class="row mt-3">
                 <div class="col">
-                  <div class="fake-chart">
-                    <p>KHÔNG ĐÔNG</p>
+                  <div :class="'fake-chart ' + (choosen_prediction.co_dong ? 'bg-danger text-white':'bg-success text-white' )">
+                    <p>
+                      {{ choosen_prediction.co_dong ? "ĐÔNG" : "KHÔNG ĐÔNG" }}
+                    </p>
                   </div>
                 </div>
 
                 <div class="col text-left">
-                  <h5>Tổng HS nộp: 5.486.427</h5>
-                  <h6>Giải quyết: 5.303.821 hồ sơ</h6>
-                  <h6>Đúng hạn: 5.303.821 hồ sơ</h6>
+                  <h6>Số nhân viên : {{ choosen_prediction.so_nhan_vien }} người </h6>
+                  <h6>Đang làm hồ sơ: {{ choosen_prediction.dang_lam  }} người</h6>
+                  <h6>Đang chờ: {{ choosen_prediction.dang_cho  }} người</h6>
                 </div>
               </div>
             </div>
@@ -145,31 +147,10 @@
               <div class="statistic-card mt-3">
                 <swiper :options="swiperOptions">
 
-                  <swiper-slide>
-                    <div class="right-handed-card">
-                      <span>Ngày 20/02/2023</span><br>
-                      <span>Không đông</span><br>
-                    </div>
-                  </swiper-slide>
-
-                  <swiper-slide>
-                    <div class="right-handed-card">
-                      <span>Ngày 21/02/2023</span><br>
-                      <span>Đông</span><br>
-                    </div>
-                  </swiper-slide>
-
-                  <swiper-slide>
-                    <div class="right-handed-card">
-                      <span>Ngày 22/02/2023</span><br>
-                      <span>Đông</span><br>
-                    </div>
-                  </swiper-slide>
-
-                  <swiper-slide>
-                    <div class="right-handed-card">
-                      <span>Ngày 23/02/2023</span><br>
-                      <span>Không đông</span><br>
+                  <swiper-slide v-for="(sw,index) in choosen_prediction.predictions" :key="index">
+                    <div :class="'right-handed-card ' + (sw.co_dong ? 'bg-danger text-white':'bg-success text-white' )">
+                      <span>Ngày {{ sw.date }}</span><br>
+                      <span>{{ sw.co_dong ? "ĐÔNG" : "KHÔNG ĐÔNG" }}</span><br>
                     </div>
                   </swiper-slide>
                 </swiper>
@@ -195,6 +176,171 @@
     },
     data(){
       return {
+        choosen_prediction: {},
+        predictions:[
+          {
+            so_nhan_vien: 20,
+            dang_lam: 20,
+            dang_cho: 0,
+            co_dong: false,
+            predictions: [
+              {
+                date: "21/02/2023",
+                co_dong: true
+              },
+              {
+                date: "22/02/2023",
+                co_dong: true
+              },
+              {
+                date: "23/02/2023",
+                co_dong: false,
+              },
+              {
+                date: "24/02/2023",
+                co_dong: false,
+              },
+              {
+                date: "27/02/2023",
+                co_dong: true,
+              },
+              {
+                date: "28/02/2023",
+                co_dong: true,
+              },
+            ]
+          },
+          {
+            so_nhan_vien: 20,
+            dang_lam: 20,
+            dang_cho: 30,
+            co_dong: true,
+            predictions: [
+              {
+                date: "21/02/2023",
+                co_dong: false
+              },
+              {
+                date: "22/02/2023",
+                co_dong: true
+              },
+              {
+                date: "23/02/2023",
+                co_dong: true,
+              },
+              {
+                date: "24/02/2023",
+                co_dong: false,
+              },
+              {
+                date: "27/02/2023",
+                co_dong: false,
+              },
+              {
+                date: "28/02/2023",
+                co_dong: true,
+              },
+            ]
+          },
+          {
+            so_nhan_vien: 20,
+            dang_lam: 10,
+            dang_cho: 0,
+            co_dong: false,
+            predictions: [
+              {
+                date: "21/02/2023",
+                co_dong: false
+              },
+              {
+                date: "22/02/2023",
+                co_dong: true
+              },
+              {
+                date: "23/02/2023",
+                co_dong: true,
+              },
+              {
+                date: "24/02/2023",
+                co_dong: false,
+              },
+              {
+                date: "27/02/2023",
+                co_dong: true,
+              },
+              {
+                date: "28/02/2023",
+                co_dong: true,
+              },
+            ]
+          },
+          {
+            so_nhan_vien: 20,
+            dang_lam: 10,
+            dang_cho: 0,
+            co_dong: false,
+            predictions: [
+              {
+                date: "21/02/2023",
+                co_dong: false
+              },
+              {
+                date: "22/02/2023",
+                co_dong: false
+              },
+              {
+                date: "23/02/2023",
+                co_dong: false,
+              },
+              {
+                date: "24/02/2023",
+                co_dong: false,
+              },
+              {
+                date: "27/02/2023",
+                co_dong: true,
+              },
+              {
+                date: "28/02/2023",
+                co_dong: false,
+              },
+            ]
+          },
+          {
+            so_nhan_vien: 20,
+            dang_lam: 20,
+            dang_cho: 20,
+            co_dong: true,
+            predictions: [
+              {
+                date: "21/02/2023",
+                co_dong: false
+              },
+              {
+                date: "22/02/2023",
+                co_dong: false
+              },
+              {
+                date: "23/02/2023",
+                co_dong: false,
+              },
+              {
+                date: "24/02/2023",
+                co_dong: true,
+              },
+              {
+                date: "27/02/2023",
+                co_dong: true,
+              },
+              {
+                date: "28/02/2023",
+                co_dong: true,
+              },
+            ]
+          },
+
+        ],
+
         currentDate: '',
 
         month: true,
@@ -216,7 +362,7 @@
           spaceBetween : 30,
           autoplay: {
               delay: 3000,
-              disableOnInteraction: false
+              disableOnInteraction: true
           },
         },
 
@@ -371,8 +517,11 @@
       },
 
       toggleShowStatistic(tab) {
+        console.log(tab)
         this.currentTab = tab;
         this.isShowStatistic = true;
+        this.choosen_prediction = this.predictions[tab - 1]
+        console.log(this.choosen_prediction)
       }
     }
   }
