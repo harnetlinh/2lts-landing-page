@@ -1,7 +1,7 @@
 <template>
   <div>
   <section class="pb-110 mt-5" id='features'>
-      <div class="container">
+      <div class="">
           <div class="row justify-content-center">
               <div class="col-md-12 col-lg-12 col-xl-12">
                   <!-- section title -->
