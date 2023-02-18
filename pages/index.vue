@@ -3,18 +3,13 @@
     <NavOne />
     <BannerOne />
     <Features />
-    <!-- <Counter /> -->
-    <!-- <ServiceOne /> -->
-    <!-- <ServiceTwo /> -->
-
     <Screenshots />
     <ClientsLogo />
-    <!-- <Video /> -->
+    <ServiceOne />
+    <ServiceTwo />
+    <ServiceThree />
+    <ServiceFour />
     <Pricing />
-    <!-- <Testimonial /> -->
-
-    <!-- <BlogHome /> -->
-    <!-- <DownloadApp /> -->
     <Footer />
   </div>
 
@@ -27,6 +22,8 @@
   import Counter from "../components/Counter";
   import ServiceTwo from "../components/ServiceTwo";
   import ServiceOne from "../components/ServiceOne";
+  import ServiceThree from "../components/ServiceThree";
+  import ServiceFour from "../components/ServiceFour";
   import Video from "../components/Video";
   import Screenshots from "../components/Screenshots";
   import Pricing from "../components/Pricing";
@@ -45,6 +42,8 @@
       Video,
       ServiceOne,
       ServiceTwo,
+      ServiceThree,
+      ServiceFour,
       Counter,
       Features,
       Footer,

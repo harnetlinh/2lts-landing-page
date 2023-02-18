@@ -1,11 +1,11 @@
 <template>
-  <section class="pt-20 pb-20" id="#service-one">
+  <section class="pt-20 pb-20" id="#service-three">
     <div class="container-fluid w-100">
       <div class="row justify-content-center">
         <div class="col-lg-12 col-sm-12 col-xl-12">
           <!-- user ineract text -->
           <div class="w-100">
-            <img width="100%" src="../static/assets/img/5.png" alt="" />
+            <img width="100%" src="../static/assets/img/7.png" alt="" />
           </div>
         </div>
       </div>
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "ServiceOne",
+  name: "ServiceThree",
 };
 </script>
 
