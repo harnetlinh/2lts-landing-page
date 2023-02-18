@@ -4,7 +4,7 @@
           <div class="row justify-content-center">
               <div class="col-md-12 col-lg-8">
                   <div class="section-title text-center" style="padding-top: 40px;">
-                      <h2>Sample Text</h2>
+                      <h2>Tra cứu dịch vụ</h2>
                   </div>
               </div>
           </div>
@@ -15,8 +15,8 @@
                       <div class="price--nav-inner">
                           <nav>
                               <div @click="handleToggle" class="nav info-tabs">
-                                  <a :class="`price--nav-item ${month ? 'active show' : ''}`" id="nav-contact-tab" data-toggle="tab" href="#month">Sample Tab 1</a>
-                                  <a :class="`price--nav-item ${year ? 'active show' : ''}`" href="#year">Sample Tab 2</a>
+                                  <a :class="`price--nav-item ${month ? 'active show' : ''}`" id="nav-contact-tab" data-toggle="tab" href="#month">Công dân</a>
+                                  <a :class="`price--nav-item ${year ? 'active show' : ''}`" href="#year">Doanh nghiệp</a>
                               </div>
                           </nav>
                       </div>
@@ -84,7 +84,7 @@
               :class="`col text-center location-tab ${currentTab == 1 ? 'active show' : ''}`"
             >
               <img v-if="currentTab === 1" src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="" style="width: 24px; height: 24px;">
-              <span>Hà Nội</span>
+              <span>Cầu Giấy</span>
             </div>
 
             <div
@@ -92,7 +92,7 @@
               :class="`col text-center location-tab ${currentTab == 2 ? 'active show' : ''}`"
             >
               <img v-if="currentTab === 2" src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="" style="width: 24px; height: 24px;">
-              <span>Huế</span>
+              <span>Phố Huế</span>
             </div>
 
             <div
@@ -100,7 +100,7 @@
               :class="`col text-center location-tab ${currentTab == 3 ? 'active show' : ''}`"
             >
               <img v-if="currentTab === 3" src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="" style="width: 24px; height: 24px;">
-              <span>Đà Nẵng</span>
+              <span>Bắc Từ Liêm</span>
             </div>
 
             <div
@@ -108,7 +108,7 @@
               :class="`col text-center location-tab ${currentTab == 4 ? 'active show' : ''}`"
             >
               <img v-if="currentTab === 4" src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="" style="width: 24px; height: 24px;">
-              <span>Cần Thơi</span>
+              <span>Nam Từ Liêm</span>
             </div>
 
             <div
@@ -116,18 +116,18 @@
               :class="`col text-center location-tab ${currentTab == 5 ? 'active show' : ''}`"
             >
               <img v-if="currentTab === 5" src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="" style="width: 24px; height: 24px;">
-              <span>TP. Hồ Chí Minh</span>
+              <span>Thanh Xuân</span>
             </div>
           </div>
 
           <div v-if="isShowStatistic" class="row mt-3">
             <div class="col-md-6 col-lg-6 text-center">
-              <span>Năm 2022</span>
+              <span>Hôm nay, {{ currentDate }}</span>
 
               <div class="row mt-3">
                 <div class="col">
                   <div class="fake-chart">
-                    <p>100% đúng hạn</p>
+                    <p>KHÔNG ĐÔNG</p>
                   </div>
                 </div>
 
@@ -147,29 +147,29 @@
 
                   <swiper-slide>
                     <div class="right-handed-card">
-                      <span>Tháng 01/2022</span><br>
-                      <span>Text</span><br>
+                      <span>Ngày 14/02/2023</span><br>
+                      <span>Không đông</span><br>
                     </div>
                   </swiper-slide>
 
                   <swiper-slide>
                     <div class="right-handed-card">
-                      <span>Tháng 02/2022</span><br>
-                      <span>Text</span><br>
+                      <span>Ngày 15/02/2023</span><br>
+                      <span>Đông</span><br>
                     </div>
                   </swiper-slide>
 
                   <swiper-slide>
                     <div class="right-handed-card">
-                      <span>Tháng 03/2022</span><br>
-                      <span>Text</span><br>
+                      <span>Ngày 16/02/2023</span><br>
+                      <span>Đông</span><br>
                     </div>
                   </swiper-slide>
 
                   <swiper-slide>
                     <div class="right-handed-card">
-                      <span>Tháng 04/2022</span><br>
-                      <span>Text</span><br>
+                      <span>Ngày 17/02/2023</span><br>
+                      <span>Không đông</span><br>
                     </div>
                   </swiper-slide>
                 </swiper>
@@ -195,6 +195,8 @@
     },
     data(){
       return {
+        currentDate: '',
+
         month: true,
 
         year: false,
@@ -237,73 +239,73 @@
         listFirstItem: [
           {
             id: 1,
-            text: 'Example Text 1',
+            text: 'Hộ tịch',
           },
           {
             id: 2,
-            text: 'Example Text 2',
+            text: 'Chứng thực',
           },
           {
             id: 3,
-            text: 'Example Text 3',
+            text: 'Bảo trợ',
           },
           {
             id: 4,
-            text: 'Example Text 4',
+            text: 'Xây dựng',
           },
           {
             id: 5,
-            text: 'Example Text 5',
+            text: 'Y tế',
           },
         ],
 
         listSecondItem: [
           {
             id: 1,
-            text: 'Example Text 1',
+            text: 'Khởi sự',
           },
           {
             id: 2,
-            text: 'Example Text 2',
+            text: 'Công thương',
           },
           {
             id: 3,
-            text: 'Example Text 3',
+            text: 'Thương mại',
           },
           {
             id: 4,
-            text: 'Example Text 4',
+            text: 'Sở hữu trí tuệ',
           },
           {
             id: 5,
-            text: 'Example Text 5',
+            text: 'Xuất bản',
           },
         ],
-        
+
 
         listThirdItem: [
           {
             id: 1,
-            text: 'Example Text 1',
+            text: 'Khởi sự',
           },
           {
             id: 2,
-            text: 'Example Text 2',
+            text: 'Công thương',
           },
           {
             id: 3,
-            text: 'Example Text 3',
+            text: 'Thương mại',
           },
           {
             id: 4,
-            text: 'Example Text 4',
+            text: 'Sở hữu trí tuệ',
           },
           {
             id: 5,
-            text: 'Example Text 5',
+            text: 'Xuất bản',
           },
         ],
-        
+
 
         listFourthItem: [
           {
@@ -329,8 +331,21 @@
         ]
       }
     },
+    created() {
+      this.getCurrentDate();
+    },
     methods: {
+      getCurrentDate(){
+        const today = new Date();
+        const yyyy = today.getFullYear();
+        let mm = today.getMonth() + 1; // Months start at 0!
+        let dd = today.getDate();
 
+        if (dd < 10) dd = '0' + dd;
+        if (mm < 10) mm = '0' + mm;
+
+        this.currentDate = dd + '/' + mm + '/' + yyyy;
+      },
       handleToggle(){
           const month = this.month;
           const year = this.year;

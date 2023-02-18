@@ -8,10 +8,11 @@
     <!-- <ServiceTwo /> -->
 
     <Screenshots />
-    <Video />
+    <ClientsLogo />
+    <!-- <Video /> -->
     <Pricing />
-    <Testimonial />
-    <!-- <ClientsLogo /> -->
+    <!-- <Testimonial /> -->
+
     <!-- <BlogHome /> -->
     <!-- <DownloadApp /> -->
     <Footer />

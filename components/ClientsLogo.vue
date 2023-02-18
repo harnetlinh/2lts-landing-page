@@ -1,10 +1,13 @@
 <template>
-  <section class="pt-120 pb-120">
-      <div class="container">
-          <div class="row">
-              <div class="col">
+  <section class="pb-120" id="gia-tri-cot-loi">
+      <div class="ontainer-fluid">
+          <div class="row justify-content-center">
+              <div class="col-md-12 col-lg-12 col-xl-12">
                   <!-- partner carosel inner -->
-                  <div class="partner-carousel-wrap">
+                  <div class="w-100">
+                    <img width="100%" src="../static/assets/img/2LTS_9.png" alt="">
+                  </div>
+                  <div class="partner-carousel-wrap d-none">
                       <div class="partner-carousel owl-carousel">
 
                         <swiper :options="swiperOptions">
