@@ -44,5 +44,7 @@
 </script>
 
 <style scoped>
-
+.banner-image {
+  height: calc(100vh - 92px);
+}
 </style>

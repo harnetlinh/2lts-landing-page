@@ -1,19 +1,19 @@
 <template>
   <div>
   <section class="pb-110 mt-5" id='features'>
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-12 col-xl-12">
+            <!-- section title -->
+            <div class="text-center">
+                <div class="w-100">
+                  <img width="100%" src="../static/assets/img/2LTS_3.png" alt="">
+                </div>
+            </div>
+            <!-- End of section title -->
+        </div>
+    </div>
+
       <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-md-12 col-lg-12 col-xl-12">
-                  <!-- section title -->
-                  <div class="text-center">
-                      <h2>Về chúng tôi</h2>
-                      <div class="w-100">
-                        <img width="100%" src="../static/assets/img/2LTS_3.png" alt="">
-                      </div>
-                  </div>
-                  <!-- End of section title -->
-              </div>
-          </div>
           <div class="row justify-content-center">
               <div class="col-xl-10 col-lg-12">
                   <div class="feature-carousel owl-carousel">
@@ -21,43 +21,49 @@
                     <swiper :options="swiperOptions">
 
                       <swiper-slide>
-                      <!-- single feature inner -->
-                      <div class="single-feature-inner text-center">
-                          <div class="feature-icon"><img src="/assets/img/icons/project-management.svg" class="svg" alt=""></div>
-                          <h5>New Artwork<br> Unveiled</h5>
-                          <p>There are many variations of passages of lorem Ipsum but majority have suffered.</p>
-                      </div>
-                      <!-- End of single feature inner -->
+                        <div class="single-feature-inner text-center">
+                            <img
+                              style="object-fit: contain;"
+                              src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOSISuYrVjDtqhZzorbGad07am7nUuUdjWnRfxBexZXlXH7rjj5-TzZgqHovb9n4K4tPUUNTTkrbIJ036-8NfW_S3yP2LA=w1920-h969"
+                              class="svg"
+                              alt=""
+                            >
+                        </div>
                       </swiper-slide>
 
                       <swiper-slide>
-                      <!-- single feature inner -->
-                      <div class="single-feature-inner text-center">
-                          <div class="feature-icon"><img src="/assets/img/icons/solution.svg" class="svg" alt=""></div>
-                          <h5>Company Growth<br> Strategy</h5>
-                          <p>There are many variations of passages of lorem Ipsum but majority have suffered.</p>
-                      </div>
-                      <!-- End of single feature inner -->
+                        <div class="single-feature-inner text-center">
+                            <img
+                              style="object-fit: contain;"
+                              src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEORFaa-Za2e68WCSJMNdlRulty_4dYZ2wCKN0Ad9Mmtp0ZUqPG0Reqrkxb_sIJGl8KGwsLymV6u-csV7knlLjxFOrexHPQ=w1920-h969"
+                              class="svg"
+                              alt=""
+                            >
+                        </div>
                       </swiper-slide>
 
                       <swiper-slide>
-                      <!-- single feature inner -->
-                      <div class="single-feature-inner text-center">
-                          <div class="feature-icon"><img src="/assets/img/icons/planning.svg" class="svg" alt=""></div>
-                          <h5>Perfect Application Intergration</h5>
-                          <p>There are many variations of passages of lorem Ipsum but majority have suffered.</p>
-                      </div>
-                      <!-- End of single feature inner -->
+                        <div class="single-feature-inner text-center">
+                            <img
+                              style="object-fit: contain;"
+                              src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOQS0oFTLTA6PsKTeLUBv928yiOyww2bIFJnCe2LV71HAhcOLSiE8TCQW6ShI66vKQrRwrntteZ244iBkyKNXw4gLPHldQ=w1920-h969"
+                              class="svg"
+                              alt=""
+                            >
+                        </div>
                       </swiper-slide>
 
                       <swiper-slide>
-                      <!-- single feature inner -->
-                      <div class="single-feature-inner text-center">
-                          <div class="feature-icon"><img src="/assets/img/icons/goal.svg" class="svg" alt=""></div>
-                          <h5>Creative App<br>Display</h5>
-                          <p>There are many variations of passages of lorem Ipsum but majority have suffered.</p>
-                      </div><!-- End of single feature inner -->
+                        <div class="single-feature-inner text-center">
+                            <img
+                              style="object-fit: contain;"
+                              src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOQNEGjVTIFtamYmvO3G-oe0DUWfqPq8nF7cHizzbRRBjYndK5MNbdzUYQz8TXEKx5B1dSoX7amkfF-dpnZP29p6ez4s=w1920-h969"
+                              class="svg"
+                              alt=""
+                            >
+                        </div>
                       </swiper-slide>
+
                       <div class="swiper-pagination" slot="pagination"></div>
                     </swiper>
                   </div><!--/.feature-carousel-->

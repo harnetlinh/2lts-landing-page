@@ -3,16 +3,17 @@
     <NavOne />
     <BannerOne />
     <Features />
-    <Counter />
-    <ServiceOne />
-    <ServiceTwo />
-    <Video />
+    <!-- <Counter /> -->
+    <!-- <ServiceOne /> -->
+    <!-- <ServiceTwo /> -->
+
     <Screenshots />
+    <Video />
     <Pricing />
     <Testimonial />
-    <ClientsLogo />
-    <BlogHome />
-    <DownloadApp />
+    <!-- <ClientsLogo /> -->
+    <!-- <BlogHome /> -->
+    <!-- <DownloadApp /> -->
     <Footer />
   </div>
 

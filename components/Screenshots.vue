@@ -1,17 +1,14 @@
 <template>
-  <section class="pt-120 pb-115 app-shot-one" id="app">
+  <section class="pt-30 pb-115 app-shot-one" id="app">
               <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-md-12 col-lg-8">
-                        <!-- section title -->
-                        <div class="section-title text-center">
-                            <h2>Jironis App Screens</h2>
-                            <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt <br> mollit lorem ipsum anim id est laborum perspiciatis unde.</p>
-                        </div>
-                        <!-- End of section title -->
+                    <div class="col-md-12 col-lg-12 col-xl-12">
+                      <div class="w-100">
+                        <img width="100%" src="../static/assets/img/2LTS_5.png" alt="">
+                      </div>
                     </div>
                 </div>
-                  <div class="app-shot-one__carousel thm__owl-carousel">
+                  <div class="app-shot-one__carousel thm__owl-carousel d-none">
 
                     <swiper :options="swiperOptions">
 
