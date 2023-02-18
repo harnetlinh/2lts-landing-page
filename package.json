@@ -11,7 +11,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "predeploy": "yarn generate",
-    "deploy": "gh-pages -d .nuxt"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^5.0.0",
