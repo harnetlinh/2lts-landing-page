@@ -140,35 +140,35 @@
             </div>
 
             <div class="col-md-6 col-lg-6 text-center">
-              <span>Tình hình</span>
+              <span>Dự báo tình trạng</span>
 
               <div class="statistic-card mt-3">
                 <swiper :options="swiperOptions">
 
                   <swiper-slide>
                     <div class="right-handed-card">
-                      <span>Ngày 14/02/2023</span><br>
+                      <span>Ngày 20/02/2023</span><br>
                       <span>Không đông</span><br>
                     </div>
                   </swiper-slide>
 
                   <swiper-slide>
                     <div class="right-handed-card">
-                      <span>Ngày 15/02/2023</span><br>
+                      <span>Ngày 21/02/2023</span><br>
                       <span>Đông</span><br>
                     </div>
                   </swiper-slide>
 
                   <swiper-slide>
                     <div class="right-handed-card">
-                      <span>Ngày 16/02/2023</span><br>
+                      <span>Ngày 22/02/2023</span><br>
                       <span>Đông</span><br>
                     </div>
                   </swiper-slide>
 
                   <swiper-slide>
                     <div class="right-handed-card">
-                      <span>Ngày 17/02/2023</span><br>
+                      <span>Ngày 23/02/2023</span><br>
                       <span>Không đông</span><br>
                     </div>
                   </swiper-slide>
